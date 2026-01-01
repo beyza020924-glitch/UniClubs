@@ -1,0 +1,239 @@
+/* general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.footer-logo img {
+    height: 40px;  /* adjust the height of the logo */
+    width: auto;   /* maintain the aspect ratio */
+}
+
+/* form logo - Uni Club*/
+.logo-img {
+    height: 70px; /* adjust the height of the image logo */
+    width: auto;
+}
+
+/* search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 1100px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #0B1F63;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #333;
+}
+
+/* for the top of the page names */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0B1F63;
+    font-size: 16px;
+}
+
+.auth-buttons button {
+    border: 1px solid #0B1F63;
+    background-color: #0B1F63;
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.auth-buttons button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* for the top of the page names: divider of the headers */
+a {
+    color: #0B1F63;
+    text-decoration: none;
+}
+
+.divider {
+    color: #ddd;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/* main content styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* set a minimum height, but it can be extended according to the content */
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* include padding and border */
+    padding: 20px;
+}
+
+/* background for clubsPage1.html and clubsPage2.html */
+.clubs-page main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* content-compatible minimum height */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent), 
+                url(/static/pictures/clubs.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* clubs section */
+.clubs-container {
+    display: flex; /* enables Flexbox layout */
+    justify-content: center; /* centers the items horizontally */
+    align-items: flex-start; /* aligns the items to the top vertically */
+    flex-wrap: wrap; /* allows items to wrap to the next row if they don't fit */
+    gap: 20px; /* adds spacing between items */
+    padding: 20px; /* adds padding inside the container */
+    max-width: 1200px; /* limits the maximum width of the container */
+    margin: auto; /* centers the container horizontally */
+    box-sizing: border-box; /* ensures padding and border are included in the element's total width and height */
+}
+
+.clubs-container h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 48px;
+}
+
+.clubs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 column layout */
+    gap: 40px;
+    padding: 20px;
+}
+
+.club-card {
+    display: flex; 
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 550px;
+    width: 350px;
+    position: relative;
+}
+
+.club-card h3 {
+    color: #0B1F63;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center; /* centers the text */
+}
+
+.club-card p {
+    font-size: 14px;
+    color: #555;
+    text-align: left; /* left-aligned by default */
+}
+
+.club-card p.justify {
+    text-align: justify; /* justify only certain paragraphs  */
+}
+
+.club-card button {
+    padding: 10px 20px;
+    background-color: #0B1F63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+}
+
+.club-card button:hover {
+    background-color: #333;
+}
+
+.club-card .button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    position: absolute; 
+    bottom: 10px; 
+    left: 0; 
+    right: 0; 
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination a, .pagination span {
+    text-decoration: none;
+    background-color: #0B1F63;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #333;
+    color: white;
+}
+
+
